@@ -209,10 +209,14 @@ Transfer learning is the process of transferring the learning from a model to an
 
 Some of the popular transfer learning models are:
 
-VGG-16
-BERT
-GTP-3
-Inception V3
+VGG-16  
+
+BERT  
+
+GTP-3  
+
+Inception V3  
+
 XCeption
 
 
@@ -226,11 +230,12 @@ The input image gets fully covered by the filter and specified stride. The paddi
 With padding == “VALID” implies there is no padding in the input image. The filter window always stays inside the input image. It assumes that all the dimensions are valid so that the input image gets fully covered by a filter and the stride defined by you.
 
 ### 34. What are some of the uses of Autoencoders in Deep Learning?
-Autoencoders are used to convert black and white images into colored images.
-Autoencoder helps to extract features and hidden patterns in the data.
-It is also used to reduce the dimensionality of data.
-It can also be used to remove noises from images.
-35. What is the Swish Function?
+Autoencoders are used to convert black and white images into colored images.  
+Autoencoder helps to extract features and hidden patterns in the data.  
+It is also used to reduce the dimensionality of data.  
+It can also be used to remove noises from images.  
+
+### 35. What is the Swish Function?
 Swish is an activation function proposed by Google which is an alternative to the ReLU activation function. 
 
 It is represented as: f(x) = x * sigmoid(x).
@@ -240,10 +245,11 @@ The Swish function works better than ReLU for a variety of deeper models.
 The derivative of Swist can be written as: y’ = y + sigmoid(x) * (1 - y) 
 
 ### 36. What are the reasons for mini-batch gradient being so useful?
-Mini-batch gradient is highly efficient compared to stochastic gradient descent.
-It lets you attain generalization by finding the flat minima.
-Mini-batch gradient helps avoid local minima to allow gradient approximation for the whole dataset.
-37. What do you understand by Leaky ReLU activation function?
+Mini-batch gradient is highly efficient compared to stochastic gradient descent.  
+It lets you attain generalization by finding the flat minima.  
+Mini-batch gradient helps avoid local minima to allow gradient approximation for the whole dataset.  
+
+### 37. What do you understand by Leaky ReLU activation function?
 Leaky ReLU is an advanced version of the ReLU activation function. In general, the ReLU function defines the gradient to be 0 when all the values of inputs are less than zero. This deactivates the neurons. To overcome this problem, Leaky ReLU activation functions are used. It has a very small slope for negative values instead of a flat slope.
 
 ### 38. What is Data Augmentation in Deep Learning?
@@ -260,17 +266,21 @@ Momentum and Root Mean Square Propagation.
 The number of parameters in a convolutional neural network is much more diminutive than that of a Dense Neural Network. Hence, a CNN is less likely to overfit.
 CNN allows you to look at the weights of a filter and visualize what the network learned. So, this gives a better understanding of the model.
 CNN trains models in a hierarchical way, i.e., it learns the patterns by explaining complex patterns using simpler ones.
-41. Which strategy does not prevent a model from over-fitting to the training data?
-Dropout
-Pooling
-Data augmentation
-Early stopping
+
+
+### 41. Which strategy does not prevent a model from over-fitting to the training data?
+Dropout  
+Pooling  
+Data augmentation  
+Early stopping  
 Answer: b) Pooling - It’s a layer in CNN that performs a downsampling operation.
 
 ### 42. Explain two ways to deal with the vanishing gradient problem in a deep neural network.
-Use the ReLU activation function instead of the sigmoid function
+Use the ReLU activation function instead of the sigmoid function  
 Initialize neural networks using Xavier initialization that works with tanh activation.
-43. Why is a deep neural network better than a shallow neural network?
+
+
+### 43. Why is a deep neural network better than a shallow neural network?
 Both deep and shallow neural networks can approximate the values of a function. But the deep neural network is more efficient as it learns something new in every layer. A shallow neural network has only one hidden layer. But a deep neural network has several hidden layers that create a deeper representation and computation capability.
 
 
