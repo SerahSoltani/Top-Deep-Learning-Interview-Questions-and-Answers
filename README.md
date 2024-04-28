@@ -9,9 +9,8 @@ If you are going for a deep learning interview, you definitely know what exactly
 Neural Networks replicate the way humans learn, inspired by how the neurons in our brains fire, only much simpler.  
 The most common Neural Networks consist of three network layers:
 
-An input layer
-A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better)
-An output layer
+1.An input layer A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better) 
+2.An output layer
 Each sheet contains neurons called “nodes,” performing various operations. Neural Networks are used in deep learning algorithms like CNN, RNN, GAN, etc.
 
 ### 3. What Is a Multi-layer Perceptron(MLP)?
@@ -28,9 +27,6 @@ One of the most basic Deep Learning models is a Boltzmann Machine, resembling a 
 ### 6. What Is the Role of Activation Functions in a Neural Network?
 At the most basic level, an activation function decides whether a neuron should be fired or not. It accepts the weighted sum of the inputs and bias as input to any activation function. Step function, Sigmoid, ReLU, Tanh, and Softmax are examples of activation functions.
 
-Role of Activation Functions in a Neural Network
-
-
 
 ### 7. What Is the Cost Function?
 Also referred to as “loss” or “error,” cost function is a measure to evaluate how good your model’s performance is. It’s used to compute the error of the output layer during backpropagation. We push that error backward through the neural network and use that during the different training functions.
@@ -39,12 +35,8 @@ Also referred to as “loss” or “error,” cost function is a measure to eva
 ### 8. What Is Gradient Descent?
 Gradient Descent is an optimal algorithm to minimize the cost function or to minimize an error. The aim is to find the local-global minima of a function. This determines the direction the model should take to reduce the error.
 
-Gradient Descent
-
 ### 9. What Do You Understand by Backpropagation?
 This is one of the most frequently asked deep learning interview questions. Backpropagation is a technique to improve the performance of the network. It backpropagates the error and updates the weights to reduce the error.
-
-What do you understand by Backpropogation?
 
 ### 10. What Is the Difference Between a Feedforward Neural Network and Recurrent Neural Network?
 In this deep learning interview question, the interviewee expects you to give a detailed answer.
@@ -53,7 +45,6 @@ A Feedforward Neural Network signals travel in one direction from input to outpu
 
 A Recurrent Neural Network’s signals travel in both directions, creating a looped network. It considers the current input with the previously received inputs for generating the output of a layer and can memorize past data due to its internal memory.
 
-Recurrent Neural Network
 
 ### 11. What Are the Applications of a Recurrent Neural Network (RNN)?
 The RNN can be used for sentiment analysis, text mining, and image captioning. Recurrent Neural Networks can also address time series problems such as predicting the prices of stocks in a month or quarter.
@@ -63,28 +54,23 @@ The RNN can be used for sentiment analysis, text mining, and image captioning. R
 ### 12. What Are the Softmax and ReLU Functions?
 Softmax is an activation function that generates the output between zero and one. It divides each output, such that the total sum of the outputs is equal to one. Softmax is often used for output layers.
 
-Softmax function
 
 ReLU (or Rectified Linear Unit) is the most widely used activation function. It gives an output of X if X is positive and zeros otherwise. ReLU is often used for hidden layers.
 
-Relu Function
 
 ### 13. What Are Hyperparameters?
 This is another frequently asked deep learning interview question. With neural networks, you’re usually working with hyperparameters once the data is formatted correctly. A hyperparameter is a parameter whose value is set before the learning process begins. It determines how a network is trained and the structure of the network (such as the number of hidden units, the learning rate, epochs, etc.).
 
-Hyperparameters
 
 ### 14. What Will Happen If the Learning Rate Is Set Too Low or Too High?
 When your learning rate is too low, training of the model will progress very slowly as we are making minimal updates to the weights. It will take many updates before reaching the minimum point.
 
 If the learning rate is set too high, this causes undesirable divergent behavior to the loss function due to drastic updates in weights. It may fail to converge (model can give a good output) or even diverge (data is too chaotic for the network to train).
 
-Learning rate is set too low or too high
 
 ### 15. What Is Dropout and Batch Normalization?
 Dropout is a technique of dropping out hidden and visible units of a network randomly to prevent overfitting of data (typically dropping 20 percent of the nodes). It doubles the number of iterations needed to converge the network.
 
-Dropout and Batch Normalization
 
 Batch normalization is the technique to improve the performance and stability of neural networks by normalizing the inputs in every layer so that they have mean output activation of zero and standard deviation of one.
 
