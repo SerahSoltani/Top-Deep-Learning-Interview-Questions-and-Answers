@@ -75,20 +75,12 @@ Batch normalization is the technique to improve the performance and stability of
 The next step on this top Deep Learning interview questions and answers blog will be to discuss intermediate questions.
 
 ### 16. What Is the Difference Between Batch Gradient Descent and Stochastic Gradient Descent?
-Batch Gradient Descent
 
-Stochastic Gradient Descent
+| Batch Gradient Descent  | Stochastic Gradient Descent |
+| ------------- | ------------- |
+| The batch gradient computes the gradient using the entire dataset.  | The stochastic gradient computes the gradient using a single sample.  |
+| It takes time to converge because the volume of data is huge, and weights update slowly.  | It converges much faster than the batch gradient because it updates weight more frequently.  |
 
-The batch gradient computes the gradient using the entire dataset.
-
-It takes time to converge because the volume of data is huge, and weights update slowly.
-
-The stochastic gradient computes the gradient using a single sample.
-
-It converges much faster than the batch gradient because it updates weight more frequently.
-
-Become a Data Scientist with Hands-on Training!
-Data Scientist Master’s ProgramEXPLORE PROGRAMBecome a Data Scientist with Hands-on Training!
 
 ### 17. What is Overfitting and Underfitting, and How to Combat Them?
 Overfitting occurs when the model learns the details and noise in the training data to the degree that it adversely impacts the execution of the model on new information. It is more likely to occur with nonlinear models that have more flexibility when learning a target function. An example would be if a model is looking at cars and trucks, but only recognizes trucks that have a specific box shape. It might not be able to notice a flatbed truck because there's only a particular kind of truck it saw in training. The model performs well on training data, but not in the real world.
