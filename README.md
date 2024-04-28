@@ -3,15 +3,13 @@
 ### 1. What is Deep Learning?
 If you are going for a deep learning interview, you definitely know what exactly deep learning is. However, with this question the interviewee expects you to give an in-detail answer, with an example. Deep Learning involves taking large volumes of structured or unstructured data and using complex algorithms to train neural networks. It performs complex operations to extract hidden patterns and features.
 
-
-
 ### 2. What is a Neural Network?
 Neural Networks replicate the way humans learn, inspired by how the neurons in our brains fire, only much simpler.  
 The most common Neural Networks consist of three network layers:
 
-1.An input layer A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better) 
-2.An output layer
-Each sheet contains neurons called “nodes,” performing various operations. Neural Networks are used in deep learning algorithms like CNN, RNN, GAN, etc.
+1.An input layer A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better)  
+
+2.An output layer Each sheet contains neurons called “nodes,” performing various operations. Neural Networks are used in deep learning algorithms like CNN, RNN, GAN, etc.
 
 ### 3. What Is a Multi-layer Perceptron(MLP)?
 As in Neural Networks, MLPs have an input layer, a hidden layer, and an output layer. It has the same structure as a single layer perceptron with one or more hidden layers. A single layer perceptron can classify only linear separable classes with binary output (0,1), but MLP can classify nonlinear classes.
