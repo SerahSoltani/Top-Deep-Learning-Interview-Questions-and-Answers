@@ -84,31 +84,28 @@ The next step on this top Deep Learning interview questions and answers blog wil
 
 ### 17. What is Overfitting and Underfitting, and How to Combat Them?
 Overfitting occurs when the model learns the details and noise in the training data to the degree that it adversely impacts the execution of the model on new information. It is more likely to occur with nonlinear models that have more flexibility when learning a target function. An example would be if a model is looking at cars and trucks, but only recognizes trucks that have a specific box shape. It might not be able to notice a flatbed truck because there's only a particular kind of truck it saw in training. The model performs well on training data, but not in the real world.
-
 Underfitting alludes to a model that is neither well-trained on data nor can generalize to new information. This usually happens when there is less and incorrect data to train a model. Underfitting has both poor performance and accuracy.
-
 To combat overfitting and underfitting, you can resample the data to estimate the model accuracy (k-fold cross-validation) and by having a validation dataset to evaluate the model.
 
 ### 18. How Are Weights Initialized in a Network?
 There are two methods here: we can either initialize the weights to zero or assign them randomly.
-
 Initializing all weights to 0: This makes your model similar to a linear model. All the neurons and every layer perform the same operation, giving the same output and making the deep net useless.
-
 Initializing all weights randomly: Here, the weights are assigned randomly by initializing them very close to 0. It gives better accuracy to the model since every neuron performs different computations. This is the most commonly used method.
 
 ### 19. What Are the Different Layers on CNN?
-There are four layers in CNN:
+There are four layers in CNN:  
+1.Convolutional Layer -  the layer that performs a convolutional operation, creating several smaller picture windows to go over the data.  
 
-Convolutional Layer -  the layer that performs a convolutional operation, creating several smaller picture windows to go over the data.
-ReLU Layer - it brings non-linearity to the network and converts all the negative pixels to zero. The output is a rectified feature map.
-Pooling Layer - pooling is a down-sampling operation that reduces the dimensionality of the feature map.
-Fully Connected Layer - this layer recognizes and classifies the objects in the image.
-Master the deep learning concepts and TensorFlow open-source framework with the Deep Learning Course with TensorFlow Certification. Check out the course preview today. 
+2.ReLU Layer - it brings non-linearity to the network and converts all the negative pixels to zero. The output is a rectified feature map.  
+
+3.Pooling Layer - pooling is a down-sampling operation that reduces the dimensionality of the feature map.  
+
+4.Fully Connected Layer - this layer recognizes and classifies the objects in the image.
+
 
 ### 20. What is Pooling on CNN, and How Does It Work?
 Pooling is used to reduce the spatial dimensions of a CNN. It performs down-sampling operations to reduce the dimensionality and creates a pooled feature map by sliding a filter matrix over the input matrix.
 
-Pooling in CNN
 
 ### 21. How Does an LSTM Network Work?
 Long-Short-Term Memory (LSTM) is a special kind of recurrent neural network capable of learning long-term dependencies, remembering information for long periods as its default behavior. There are three steps in an LSTM network:
@@ -116,17 +113,18 @@ Long-Short-Term Memory (LSTM) is a special kind of recurrent neural network capa
 Step 1: The network decides what to forget and what to remember.
 Step 2: It selectively updates cell state values.
 Step 3: The network decides what part of the current state makes it to the output.
-Working of LSTM network
+
 
 ### 22. What Are Vanishing and Exploding Gradients?
 While training an RNN, your slope can become either too small or too large; this makes the training difficult. When the slope is too small, the problem is known as a “Vanishing Gradient.” When the slope tends to grow exponentially instead of decaying, it’s referred to as an “Exploding Gradient.” Gradient problems lead to long training times, poor performance, and low accuracy.
 
-Vanishing and Exploding Gradients
 
 
 ### 23. What Is the Difference Between Epoch, Batch, and Iteration in Deep Learning?
-Epoch - Represents one iteration over the entire dataset (everything put into the training model).
-Batch - Refers to when we cannot pass the entire dataset into the neural network at once, so we divide the dataset into several batches.
+Epoch - Represents one iteration over the entire dataset (everything put into the training model).  
+
+Batch - Refers to when we cannot pass the entire dataset into the neural network at once, so we divide the dataset into several batches.  
+
 Iteration - if we have 10,000 images as data and a batch size of 200. then an epoch should run 50 iterations (10,000 divided by 50).
 
 ### 24. Why is Tensorflow the Most Preferred Library in Deep Learning?
@@ -135,7 +133,6 @@ Tensorflow provides both C++ and Python APIs, making it easier to work on and ha
 ### 25. What Do You Mean by Tensor in Tensorflow?
 This is another most frequently asked deep learning interview question. A tensor is a mathematical object represented as arrays of higher dimensions. These arrays of data with different dimensions and ranks fed as input to the neural network are called “Tensors.”
 
-What Do You Mean by Tensor in Tensorflow?
 
 ### 26. What Are the Programming Elements in Tensorflow?
 Constants - Constants are parameters whose value does not change. To define a constant we use  tf.constant() command. For example:
@@ -172,11 +169,11 @@ b = tf.constant(4.0)
 
 c = a+b
 
-# Launch Session
+ Launch Session:
 
 Sess = tf.Session()
 
-# Evaluate the tensor c
+ Evaluate the tensor c:
 
 print(sess.run(c))
 
@@ -190,41 +187,19 @@ The forger will try different techniques to sell fake wine and make sure specifi
 
 The forger’s goal is to create wines that are indistinguishable from the authentic ones while the shop owner intends to tell if the wine is real or not accurately.
 
-Main components of Generator and Discriminator
 
-Let us understand this example with the help of an image shown above.
-
-There is a noise vector coming into the forger who is generating fake wine.
-
-Here the forger acts as a Generator.
-
-The shop owner acts as a Discriminator.
-
-The Discriminator gets two inputs; one is the fake wine, while the other is the real authentic wine. The shop owner has to figure out whether it is real or fake.
-
-So, there are two primary components of Generative Adversarial Network (GAN) named:
-
-Generator
-Discriminator
-The generator is a CNN that keeps keys producing images and is closer in appearance to the real images while the discriminator tries to determine the difference between real and fake images The ultimate aim is to make the discriminator learn to identify real and fake images.
 
 ### 29. What Is an Auto-encoder?
-What Is an Auto-encoder?
 
 This Neural Network has three layers in which the input neurons are equal to the output neurons. The network's target outside is the same as the input. It uses dimensionality reduction to restructure the input. It works by compressing the image input to a latent space representation then reconstructing the output from this representation.
 
 ### 30. What Is Bagging and Boosting?
 Bagging and Boosting are ensemble techniques to train multiple models using the same learning algorithm and then taking a call.
 
-What is Bagging?
-
 With Bagging, we take a dataset and split it into training data and test data. Then we randomly select data to place into the bags and train the model separately.
-
-What is Boosting?
 
 With Boosting, the emphasis is on selecting data points which give wrong output to improve the accuracy.
 
-The following are some of the most important advanced deep learning interview questions that you should know!
 
 ### 31. What is the significance of using the Fourier transform in Deep Learning tasks?
 The Fourier transform function efficiently analyzes, maintains, and manages large datasets. You can use it to generate real-time array data that is helpful for processing multiple signals.
@@ -239,7 +214,9 @@ BERT
 GTP-3
 Inception V3
 XCeption
-33. What is the difference between SAME and VALID padding in Tensorflow?
+
+
+### 33. What is the difference between SAME and VALID padding in Tensorflow?
 Using the Tensorflow library, tf.nn.max_pool performs the max-pooling operation. Tf.nn.max_pool has a padding argument that takes 2 values - SAME or VALID.
 
 With padding == “SAME” ensures that the filter is applied to all the elements of the input.
