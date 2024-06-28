@@ -276,11 +276,11 @@ Adam optimization algorithm is a combination of two gradient descent methodologi
 3. Data augmentation  
 4. Early stopping
   
-Answer: 2)Pooling - It’s a layer in CNN that performs a downsampling operation.
+Answer: 2) Pooling - It’s a layer in CNN that performs a downsampling operation.
 
 ### 42. Explain two ways to deal with the vanishing gradient problem in a deep neural network.
-Use the ReLU activation function instead of the sigmoid function  
-Initialize neural networks using Xavier initialization that works with tanh activation.
+- Use the ReLU activation function instead of the sigmoid function  
+- Initialize neural networks using Xavier initialization that works with tanh activation.
 
 
 ### 43. Why is a deep neural network better than a shallow neural network?
@@ -293,10 +293,10 @@ If you set the weights to zero, then every neuron at each layer will produce the
 ### 45. How can you train hyperparameters in a neural network?
 Hyperparameters in a neural network can be trained using four components:
 
-Batch size: Indicates the size of the input data.
+- Batch size: Indicates the size of the input data.
 
-Epochs: Denotes the number of times the training data is visible to the neural network to train. 
+- Epochs: Denotes the number of times the training data is visible to the neural network to train. 
 
-Momentum: Used to get an idea of the next steps that occur with the data being executed.
+- Momentum: Used to get an idea of the next steps that occur with the data being executed.
 
-Learning rate: Represents the time required for the network to update the parameters and learn.
+- Learning rate: Represents the time required for the network to update the parameters and learn.
