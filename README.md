@@ -8,9 +8,12 @@ If you are going for a deep learning interview, you definitely know what exactly
 Neural Networks replicate the way humans learn, inspired by how the neurons in our brains fire, only much simpler.  
 The most common Neural Networks consist of three network layers:
 
-1. An input layer A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better)  
+1. An input layer
 
-2. An output layer Each sheet contains neurons called “nodes,” performing various operations. Neural Networks are used in deep learning algorithms like CNN, RNN, GAN, etc.
+2. A hidden layer (this is the most important layer where feature extraction takes place, and adjustments are made to train faster and function better)
+
+3. An output layer
+
 
 ### 3. What Is a Multi-layer Perceptron(MLP)?
 As in Neural Networks, MLPs have an input layer, a hidden layer, and an output layer. It has the same structure as a single layer perceptron with one or more hidden layers. A single layer perceptron can classify only linear separable classes with binary output (0,1), but MLP can classify nonlinear classes.
@@ -111,9 +114,9 @@ Pooling is used to reduce the spatial dimensions of a CNN. It performs down-samp
 ### 21. How Does an LSTM Network Work?
 Long-Short-Term Memory (LSTM) is a special kind of recurrent neural network capable of learning long-term dependencies, remembering information for long periods as its default behavior. There are three steps in an LSTM network:
 
-Step 1: The network decides what to forget and what to remember.
-Step 2: It selectively updates cell state values.
-Step 3: The network decides what part of the current state makes it to the output.
+- Step 1: The network decides what to forget and what to remember.
+- Step 2: It selectively updates cell state values.
+- Step 3: The network decides what part of the current state makes it to the output.
 
 
 ### 22. What Are Vanishing and Exploding Gradients?
@@ -122,11 +125,11 @@ While training an RNN, your slope can become either too small or too large; this
 
 
 ### 23. What Is the Difference Between Epoch, Batch, and Iteration in Deep Learning?
-Epoch - Represents one iteration over the entire dataset (everything put into the training model).  
+- Epoch - Represents one iteration over the entire dataset (everything put into the training model).  
 
-Batch - Refers to when we cannot pass the entire dataset into the neural network at once, so we divide the dataset into several batches.  
+- Batch - Refers to when we cannot pass the entire dataset into the neural network at once, so we divide the dataset into several batches.  
 
-Iteration - if we have 10,000 images as data and a batch size of 200. then an epoch should run 50 iterations (10,000 divided by 50).
+- Iteration - if we have 10,000 images as data and a batch size of 200. then an epoch should run 50 iterations (10,000 divided by 50).
 
 ### 24. Why is Tensorflow the Most Preferred Library in Deep Learning?
 Tensorflow provides both C++ and Python APIs, making it easier to work on and has a faster compilation time compared to other Deep Learning libraries like Keras and Torch. Tensorflow supports both CPU and GPU computing devices.
@@ -210,15 +213,15 @@ Transfer learning is the process of transferring the learning from a model to an
 
 Some of the popular transfer learning models are:
 
-VGG-16  
+- VGG-16  
 
-BERT  
+- BERT  
 
-GTP-3  
+- GTP-3  
 
-Inception V3  
+- Inception V3  
 
-XCeption
+- XCeption
 
 
 ### 33. What is the difference between SAME and VALID padding in Tensorflow?
@@ -231,10 +234,10 @@ The input image gets fully covered by the filter and specified stride. The paddi
 With padding == “VALID” implies there is no padding in the input image. The filter window always stays inside the input image. It assumes that all the dimensions are valid so that the input image gets fully covered by a filter and the stride defined by you.
 
 ### 34. What are some of the uses of Autoencoders in Deep Learning?
-Autoencoders are used to convert black and white images into colored images.  
-Autoencoder helps to extract features and hidden patterns in the data.  
-It is also used to reduce the dimensionality of data.  
-It can also be used to remove noises from images.  
+- Autoencoders are used to convert black and white images into colored images.  
+- Autoencoder helps to extract features and hidden patterns in the data.  
+- It is also used to reduce the dimensionality of data.  
+- It can also be used to remove noises from images.  
 
 ### 35. What is the Swish Function?
 Swish is an activation function proposed by Google which is an alternative to the ReLU activation function. 
@@ -246,9 +249,9 @@ The Swish function works better than ReLU for a variety of deeper models.
 The derivative of Swist can be written as: y’ = y + sigmoid(x) * (1 - y) 
 
 ### 36. What are the reasons for mini-batch gradient being so useful?
-Mini-batch gradient is highly efficient compared to stochastic gradient descent.  
-It lets you attain generalization by finding the flat minima.  
-Mini-batch gradient helps avoid local minima to allow gradient approximation for the whole dataset.  
+- Mini-batch gradient is highly efficient compared to stochastic gradient descent.  
+- It lets you attain generalization by finding the flat minima.  
+- Mini-batch gradient helps avoid local minima to allow gradient approximation for the whole dataset.  
 
 ### 37. What do you understand by Leaky ReLU activation function?
 Leaky ReLU is an advanced version of the ReLU activation function. In general, the ReLU function defines the gradient to be 0 when all the values of inputs are less than zero. This deactivates the neurons. To overcome this problem, Leaky ReLU activation functions are used. It has a very small slope for negative values instead of a flat slope.
@@ -259,22 +262,21 @@ Data Augmentation is the process of creating new data by enhancing the size and 
 ### 39. Explain the Adam optimization algorithm.
 Adaptive Moment Estimation or Adam optimization is an extension to the stochastic gradient descent. This algorithm is useful when working with complex problems involving vast amounts of data or parameters. It needs less memory and is efficient. 
 
-Adam optimization algorithm is a combination of two gradient descent methodologies - 
-
-Momentum and Root Mean Square Propagation.
+Adam optimization algorithm is a combination of two gradient descent methodologies - Momentum and Root Mean Square Propagation.
 
 ### 40. Why is a convolutional neural network preferred over a dense neural network for an image classification task?
-The number of parameters in a convolutional neural network is much more diminutive than that of a Dense Neural Network. Hence, a CNN is less likely to overfit.
-CNN allows you to look at the weights of a filter and visualize what the network learned. So, this gives a better understanding of the model.
-CNN trains models in a hierarchical way, i.e., it learns the patterns by explaining complex patterns using simpler ones.
+- The number of parameters in a convolutional neural network is much more diminutive than that of a Dense Neural Network. Hence, a CNN is less likely to overfit.
+- CNN allows you to look at the weights of a filter and visualize what the network learned. So, this gives a better understanding of the model.
+- CNN trains models in a hierarchical way, i.e., it learns the patterns by explaining complex patterns using simpler ones.
 
 
 ### 41. Which strategy does not prevent a model from over-fitting to the training data?
-Dropout  
-Pooling  
-Data augmentation  
-Early stopping  
-Answer: b) Pooling - It’s a layer in CNN that performs a downsampling operation.
+1. Dropout  
+2. Pooling  
+3. Data augmentation  
+4. Early stopping
+  
+Answer: 2)Pooling - It’s a layer in CNN that performs a downsampling operation.
 
 ### 42. Explain two ways to deal with the vanishing gradient problem in a deep neural network.
 Use the ReLU activation function instead of the sigmoid function  
