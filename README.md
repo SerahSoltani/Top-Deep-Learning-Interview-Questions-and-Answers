@@ -293,10 +293,10 @@ If you set the weights to zero, then every neuron at each layer will produce the
 ### 45. How can you train hyperparameters in a neural network?
 Hyperparameters in a neural network can be trained using four components:
 
-- Batch size: Indicates the size of the input data.
+1. Batch size: Indicates the size of the input data.
 
-- Epochs: Denotes the number of times the training data is visible to the neural network to train. 
+2. Epochs: Denotes the number of times the training data is visible to the neural network to train. 
 
-- Momentum: Used to get an idea of the next steps that occur with the data being executed.
+3. Momentum: Used to get an idea of the next steps that occur with the data being executed.
 
-- Learning rate: Represents the time required for the network to update the parameters and learn.
+4. Learning rate: Represents the time required for the network to update the parameters and learn.
