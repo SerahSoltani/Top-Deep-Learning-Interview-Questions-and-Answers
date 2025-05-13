@@ -341,4 +341,43 @@ Skip connections, introduced in ResNets, allow outputs from earlier layers to be
 
 ---
 
-🙏 If this list helped you prepare, consider giving this repository a ⭐ and follow me for more!  
+## ✨ Advanced Deep Learning Interview Questions (Bonus Set)
+
+### 56. What is the receptive field in CNNs and why is it important?
+The receptive field refers to the region of the input image that affects a particular output feature. A larger receptive field helps the model understand more context. Deeper networks and larger kernels increase it, allowing CNNs to capture both fine details and global structures.
+
+### 57. Explain the difference between generative and discriminative models.
+- Discriminative models (e.g., logistic regression, CNNs) learn the boundary between classes (P(y|x)).
+- Generative models (e.g., GANs, VAEs) learn to generate new data (P(x|y)) and model the data distribution.
+
+### 58. What is transfer learning and why is it useful?
+Transfer learning leverages a pre-trained model (often trained on large datasets like ImageNet) to solve a new, related task. It's especially helpful when you have limited data, as the model already knows general features like edges, shapes, and textures.
+
+### 59. What is a bottleneck layer in deep neural networks?
+A bottleneck layer is a layer with fewer neurons than the previous or next layer. It forces the network to learn compact representations and is commonly used in architectures like autoencoders and ResNets to improve efficiency and reduce overfitting.
+
+### 60. What are anchor boxes in object detection models?
+Anchor boxes are predefined bounding boxes with different aspect ratios and scales, used in models like SSD and Faster R-CNN. The network learns to adjust these anchors to predict accurate bounding boxes for objects of different sizes and shapes.
+
+### 61. What is gradient clipping and when is it used?
+Gradient clipping prevents the exploding gradient problem by capping the gradients to a maximum value during backpropagation. It is commonly used in training RNNs or deep networks where gradients can become too large and destabilize learning.
+
+### 62. What is label smoothing and how does it help?
+Label smoothing modifies the hard 0 and 1 labels into softer values (e.g., 0.9 and 0.1). This prevents the model from becoming too confident, improving generalization and helping with regularization, especially in classification tasks.
+
+### 63. What is a Siamese network and where is it used?
+A Siamese network consists of two identical subnetworks that share weights and are used to learn similarity between inputs. Common use cases include face verification, signature matching, and one-shot learning.
+
+### 64. Explain the concept of triplet loss.
+Triplet loss is used to learn embeddings by comparing an anchor sample to a positive (same class) and a negative (different class). It encourages the distance between anchor and positive to be smaller than the distance to the negative by a margin.
+
+### 65. What is Neural Architecture Search (NAS)?
+NAS is an automated method to discover the best neural network architecture for a given task. It uses techniques like reinforcement learning or evolutionary algorithms to explore possible configurations and optimize performance.
+
+
+
+---
+
+🙏 If this list helped you prepare, consider giving this repository a ⭐ and follow me for more! 
+Feel free to fork it, share it, and tag me if you build something amazing with it 💡🚀
+
