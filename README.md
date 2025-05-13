@@ -1,5 +1,5 @@
 # Top Deep Learning Interview Questions and Answers  
-If it's helpful for you, please **star** this repository and **follow me**.
+🙏 If this list helped you prepare, consider giving this repository a ⭐ and follow me for more! 
 
 ### 1. What is Deep Learning?
 If you are going for a deep learning interview, you definitely know what exactly deep learning is. However, with this question the interviewee expects you to give an in-detail answer, with an example. Deep Learning involves taking large volumes of structured or unstructured data and using complex algorithms to train neural networks. It performs complex operations to extract hidden patterns and features.
