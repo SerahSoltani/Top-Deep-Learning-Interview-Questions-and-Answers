@@ -300,3 +300,45 @@ Hyperparameters in a neural network can be trained using four components:
 3. Momentum: Used to get an idea of the next steps that occur with the data being executed.
 
 4. Learning rate: Represents the time required for the network to update the parameters and learn.
+
+
+### 46. What is the role of attention mechanisms in deep learning?
+Attention mechanisms allow models to focus on specific parts of the input when producing an output. It is widely used in sequence-to-sequence tasks like machine translation and image captioning. By assigning weights to different input parts, the model can selectively concentrate on more relevant elements.
+
+### 47. Explain the concept of positional encoding in Transformers.
+Since Transformers do not use recurrence or convolution, they need a way to incorporate the order of sequences. Positional encodings are added to input embeddings to retain sequence information. They are computed using sine and cosine functions of different frequencies.
+
+### 48. What is the vanishing gradient problem in RNNs, and how do GRUs solve it?
+In RNNs, as gradients are backpropagated through time, they can become very small, leading to little or no learning. GRUs (Gated Recurrent Units) solve this using gating mechanisms (update and reset gates) to control the flow of information and preserve long-term dependencies.
+
+### 49. What are some practical use cases of convolutional neural networks outside of image classification?
+- Object detection (YOLO, Faster R-CNN)
+- Semantic segmentation (U-Net, DeepLab)
+- Style transfer
+- Medical image analysis (e.g., tumor detection)
+- Facial recognition
+- Self-driving car perception
+
+### 50. What is the difference between layer normalization and batch normalization?
+Batch normalization normalizes the inputs across the batch dimension, which can lead to issues with very small batch sizes. Layer normalization, on the other hand, normalizes across the features of a single sample, making it more suitable for RNNs and Transformers.
+
+### 51. What is a learning rate scheduler?
+A learning rate scheduler dynamically adjusts the learning rate during training. It helps speed up convergence and avoid overshooting minima. Common schedulers include step decay, exponential decay, and cyclical learning rates.
+
+### 52. What is the difference between precision, recall, and F1-score in classification tasks?
+- Precision: TP / (TP + FP) — the percentage of correctly predicted positives out of total predicted positives.
+- Recall: TP / (TP + FN) — the percentage of correctly predicted positives out of total actual positives.
+- F1-score: Harmonic mean of precision and recall — useful when you need to balance both.
+
+### 53. What is the purpose of weight decay in neural network training?
+Weight decay (L2 regularization) penalizes large weights by adding a regularization term to the loss function. It helps prevent overfitting and promotes generalization by constraining the magnitude of model weights.
+
+### 54. What is knowledge distillation in Deep Learning?
+Knowledge distillation involves training a smaller model (student) to replicate the behavior of a larger, pre-trained model (teacher). The student model learns to mimic the soft outputs (probabilities) of the teacher, resulting in a compact yet performant model.
+
+### 55. What are skip connections in neural networks and why are they useful?
+Skip connections, introduced in ResNets, allow outputs from earlier layers to be added to later layers. They help alleviate the vanishing gradient problem, making it easier to train very deep networks by allowing gradients to flow directly through the skip paths.
+
+---
+
+🙏 If this list helped you prepare, consider giving this repository a ⭐ and follow me for more!  
